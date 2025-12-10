@@ -1,0 +1,1 @@
+import mercadopago from 'mercadopago';export default async function handler(req,res){mercadopago.configure({access_token:process.env.MP_TOKEN});const {name,price}=req.body;const pref={items:[{title:name,quantity:1,unit_price:price}],notification_url:process.env.WEBHOOK_URL};const r=await mercadopago.preferences.create(pref);res.status(200).json({init_point:r.body.init_point});}
