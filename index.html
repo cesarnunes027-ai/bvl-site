@@ -1,1 +1,69 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>BVL RPG</title><link rel='stylesheet' href='styles.css'></head><body><h1>BVL RPG - Loja</h1><div id='products'></div><script src='app.js'></script></body></html>
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BVL RPG — Loja Oficial</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="BVL" class="logo">
+      <div>
+        <h1>Brasil Vida da Loucura</h1>
+        <small>RPG • SA-MP</small>
+      </div>
+    </div>
+    <nav>
+      <button id="btn-panel" class="btn ghost">Painel</button>
+      <button id="btn-store" class="btn primary">Loja</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container main">
+  <section class="hero">
+    <h2>Entre no universo <span class="accent">BVL</span></h2>
+    <p class="lead">Compre VIPs, Levels, Gold e Pacotes de Estudos. Pagamentos via MercadoPago (PIX/Cartão).</p>
+    <div class="cta">
+      <button id="open-store" class="btn big primary">Abrir Loja</button>
+      <button id="open-panel-hero" class="btn big ghost">Meu Painel</button>
+    </div>
+  </section>
+
+  <section id="store" class="card hidden">
+    <h3>Loja Oficial</h3>
+    <div id="products" class="products-grid"></div>
+  </section>
+
+  <section id="panel" class="card hidden">
+    <h3>Painel do Jogador</h3>
+    <div id="player-info"><p>Você não está logado.</p></div>
+  </section>
+</main>
+
+<!-- Login Modal -->
+<div id="modal-login" class="modal hidden">
+  <div class="modal-content">
+    <h3>Login — Nick + Senha</h3>
+    <input id="nick" placeholder="Nick" autocomplete="off" />
+    <input id="password" placeholder="Senha" type="password" autocomplete="off" />
+    <div class="row">
+      <button id="btn-login-submit" class="btn primary">Entrar / Registrar</button>
+      <button id="btn-close-login" class="btn">Fechar</button>
+    </div>
+    <p class="muted">Conta criada automaticamente ao registrar.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <small>© Brasil Vida da Loucura RPG — 2025</small>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
