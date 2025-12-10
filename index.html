@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BVL RPG — Loja Oficial</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="topbar">
   <div class="container">
     <div class="brand">
@@ -17,8 +18,7 @@
       </div>
     </div>
     <nav>
-      <button id="btn-panel" class="btn ghost">Painel</button>
-      <button id="btn-store" class="btn primary">Loja</button>
+      <button id="btn-store" class="primary">Loja</button>
     </nav>
   </div>
 </header>
@@ -26,37 +26,17 @@
 <main class="container main">
   <section class="hero">
     <h2>Entre no universo <span class="accent">BVL</span></h2>
-    <p class="lead">Compre VIPs, Levels, Gold e Pacotes de Estudos. Pagamentos via MercadoPago (PIX/Cartão).</p>
+    <p class="lead">Compre VIPs, Levels, Gold e Pacotes de Estudos. Clique em comprar e entre no nosso Discord!</p>
     <div class="cta">
-      <button id="open-store" class="btn big primary">Abrir Loja</button>
-      <button id="open-panel-hero" class="btn big ghost">Meu Painel</button>
+      <button id="open-store" class="primary">Abrir Loja</button>
     </div>
   </section>
 
-  <section id="store" class="card hidden">
+  <section id="store" class="card">
     <h3>Loja Oficial</h3>
     <div id="products" class="products-grid"></div>
   </section>
-
-  <section id="panel" class="card hidden">
-    <h3>Painel do Jogador</h3>
-    <div id="player-info"><p>Você não está logado.</p></div>
-  </section>
 </main>
-
-<!-- Login Modal -->
-<div id="modal-login" class="modal hidden">
-  <div class="modal-content">
-    <h3>Login — Nick + Senha</h3>
-    <input id="nick" placeholder="Nick" autocomplete="off" />
-    <input id="password" placeholder="Senha" type="password" autocomplete="off" />
-    <div class="row">
-      <button id="btn-login-submit" class="btn primary">Entrar / Registrar</button>
-      <button id="btn-close-login" class="btn">Fechar</button>
-    </div>
-    <p class="muted">Conta criada automaticamente ao registrar.</p>
-  </div>
-</div>
 
 <footer class="footer">
   <div class="container">
@@ -67,3 +47,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
